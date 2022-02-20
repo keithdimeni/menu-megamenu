@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/neducare.css">
+    <title>Responsive Mega Menu</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h2>MyApp</h2>
+            </div>
+            <div class="try-free">
+                <a href="#" class="btn btn-primary btn-sm">Experimente Grátis</a>
+            </div>
+            <div class="menuBtn">
+                <img src="images/Menu.svg" id="btnMenu" alt="Menu">
+            </div>
+            <nav id="nav_menu">
+                <div class="icons-menu">
+                    <i class="ti-search searchBtn" id="btnSearch"></i>
+                    <i class="ti-close menuClose" id="CloseMenu"></i>
+                </div>
+                <ul class="nav-list">
+
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+
+                    <li class="nav-item group-nav-li" id="groupNavLi">
+                        <a href="index.html" class="">Produtos</a>
+                        <div class="group-nav-div" id="groupNavDiv">
+                            <ul class="service">
+                                <div class="title"><h6>Serviços</h6></div>
+                                <li class="group-nav-item">
+                                    <i class="dripicons-rocket"></i>
+                                    <a href="#">Gestão Escolar</a>
+                                </li>
+                                <li class="group-nav-item">
+                                    <i class="dripicons-user-group"></i>
+                                    <a href="#">Consultoria Ativa</a>
+                                </li>
+                                <li class="group-nav-item">
+                                    <i class="dripicons-jewel"></i>
+                                    <a href="#">Educação VR</a>
+                                </li>
+                                <li class="group-nav-item">
+                                    <i class="dripicons-graph-pie"></i>
+                                    <a href="#">
+                                    Pagamentos Automatizados
+                                </a></li>
+                                <li class="group-nav-item">
+                                    <i class="dripicons-broadcast"></i>
+                                    <a href="#">
+                                    Elevando minha Escola
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="marketing">
+                                <div class="title"><h6>Marketing</h6></div>
+                                <li class="group-nav-item">
+                                    <i class="dripicons-graduation"></i>
+                                    <a href="#">
+                                    Minha Escola no Digital
+                                    </a>
+                                </li>
+                                <li class="group-nav-item">
+                                    <i class="dripicons-graph-bar"></i>
+                                    <a href="#">Escola 3.0</a>
+                                </li>
+                                <li class="group-nav-item">
+                                    <i class="dripicons-help"></i>
+                                    <a href="#">CRM Marketing</a>
+                                </li>
+                            </ul>
+                            <ul class="learn">
+                                 <div class="title"><h6>Educação</h6></div>
+                                <li class="group-nav-item">
+                                    <i class="dripicons-media-record"></i>
+                                    <a href="#">Aulas Online</a>
+                                </li>
+                                <li class="group-nav-item">
+                                    <i class="dripicons-conversation"></i>
+                                    <a href="#">Equipe Online</a>
+                                </li>
+                                <li class="group-nav-item">
+                                    <i class="dripicons-message"></i>
+                                    <a href="#">Relacionamento Com os Pais</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a href="index.html">Aprenda</a></li>
+
+                    <li class="nav-item"><a href="index.html">Suporte</a></li>
+
+                    <li class="nav-item"><a href="index.html">Sobre</a></li>
+
+                    <li class="nav-item"><a href="index.html">Contacto</a></li>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary">Experimente Grátis</a>
+                    <a href="#" class="btn btn-success text-white">Entrar</a>
+                </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script>
+        const navMenu = document.getElementById("nav_menu")
+        const btnMenu = document.getElementById("btnMenu")
+        const closeMenu = document.getElementById("CloseMenu")
+
+        btnMenu.addEventListener('click', function(){
+            navMenu.classList.toggle('show_menu')
+        })
+
+        closeMenu.addEventListener('click', function(){
+            navMenu.classList.remove('show_menu')
+        })
+
+
+    </script>
+</body>
+</html>
